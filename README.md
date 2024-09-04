@@ -1,6 +1,6 @@
 # Akıllı IK API
 
-Bu proje, Müşteri yönetim sistemi için bir REST API sağlar. Müşterilerle ilgili çeşitli CRUD işlemlerini yapabilen endpointler içerir.
+Bu proje, Müşteri yönetim sistemi için bir REST API sağlar. Müşterilerle hizmet verilen illerle ilgili çeşitli CRUD işlemlerini yapabilen endpointler içerir.
 
 ## Endpointler
 
@@ -56,10 +56,20 @@ Projeyi Docker kullanarak ayağa kaldırmak için aşağıdaki adımları izleyi
     ```bash
     cd akilli-ik
     ```
+
 4. API, **http://localhost:2023** adresinden erişilebilir olacak.
-Docker Compose ile projeyi ayağa kaldırın:
+
+5. Docker Compose ile projeyi ayağa kaldırın:
     ```bash
     docker-compose up --build
     ```
 
-6. Veritabanı ise PostgreSQL ile **5432** portunda çalışacaktır.
+6. API, **http://localhost:2023** adresinden erişilebilir olacaktır. Veritabanı ise PostgreSQL ile **5432** portunda çalışacaktır.
+
+## Postman Koleksiyonu
+
+API'yi test etmek için Postman kullanabilirsiniz. Tüm endpointleri içeren hazır bir Postman koleksiyonu, `akilli-ik.postman_collection.json` adıyla projeye eklenmiştir. Bu dosyayı Postman'e import ederek API isteklerini kolayca test edebilirsiniz.
+
+1. Postman'de **Import** butonuna tıklayın.
+2. `akilli-ik.postman_collection.json` dosyasını seçin ve import edin.
+3. API isteklerini hızlıca çalıştırabilirsiniz.

@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "4b97a1fa-6dc4-44e6-812b-61064fe3e47a",
+		"name": "akilli-ik",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36644161"
+	},
+	"item": [
+		{
+			"name": "musteri-dogrulama",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"musteriAdi\": \"Ahmet\",\n  \"musteriSoyadi\": \"Yılmaz\",\n  \"cinsiyet\": \"E\",\n  \"dogumTarihi\": \"1990-05-15\",\n  \"il\": \"Istanbul\",\n  \"adres\": \"Kadıköy, İstanbul\",\n  \"engelliMi\": \"H\",\n  \"cepTelefonu\": \"05551234567\",\n  \"eposta\": \"ahmet.yilmaz@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2023/api/musteri/musteri-dogrula",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"api",
+						"musteri",
+						"musteri-dogrula"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "musteri-listesi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2023/api/musteri/musteri-listesi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"api",
+						"musteri",
+						"musteri-listesi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hizmet-verilen-iller",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2023/api/musteri/hizmet-verilen-iller",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"api",
+						"musteri",
+						"hizmet-verilen-iller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "musteri-ekle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"musteriAdi\": \"Ahmet\",\n  \"musteriSoyadi\": \"Yılmaz\",\n  \"cinsiyet\": \"E\",\n  \"dogumTarihi\": \"1990-05-15\",\n  \"il\": \"Istanbul\",\n  \"adres\": \"Kadıköy, İstanbul\",\n  \"engelliMi\": \"H\",\n  \"cepTelefonu\": \"05551234567\",\n  \"eposta\": \"ahmet.yilmaz@example.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2023/api/musteri/musteri-ekle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"api",
+						"musteri",
+						"musteri-ekle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "hizmet-verilen-il-ekle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Izmir\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2023/api/musteri/hizmet-verilen-il-ekle",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2023",
+					"path": [
+						"api",
+						"musteri",
+						"hizmet-verilen-il-ekle"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
