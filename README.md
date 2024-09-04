@@ -1,6 +1,6 @@
 # Akıllı IK API
 
-Bu proje, Akıllı İnsan Kaynakları (IK) yönetim sistemi için bir REST API sağlar. Müşterilerle ilgili çeşitli CRUD işlemlerini yapabilen endpointler içerir. Ayrıca hizmet verilen illeri yönetir.
+Bu proje, Müşteri yönetim sistemi için bir REST API sağlar. Müşterilerle ilgili çeşitli CRUD işlemlerini yapabilen endpointler içerir.
 
 ## Endpointler
 
@@ -39,6 +39,8 @@ Bu proje, Akıllı İnsan Kaynakları (IK) yönetim sistemi için bir REST API s
     mvn spring-boot:run
     ```
 
+⚠️ **Uyarı:** Uygulamanın başlatılabilmesi için **localhost** üzerinde çalışan PostgreSQL veritabanına, **5432** portu üzerinden erişilebilmelidir. Bu yapılandırma sağlanmadan uygulama çalışmayacaktır.
+
 ### Docker ile Çalıştırma
 
 Projeyi Docker kullanarak ayağa kaldırmak için aşağıdaki adımları izleyin:
@@ -54,10 +56,10 @@ Projeyi Docker kullanarak ayağa kaldırmak için aşağıdaki adımları izleyi
     ```bash
     cd akilli-ik
     ```
-
-4. Docker Compose ile projeyi ayağa kaldırın:
+4. API, **http://localhost:2023** adresinden erişilebilir olacak.
+Docker Compose ile projeyi ayağa kaldırın:
     ```bash
     docker-compose up --build
     ```
 
-5. API, **http://localhost:2023** adresinden erişilebilir olacak. Veritabanı ise PostgreSQL ile **5432** portunda çalışacaktır.
+6. Veritabanı ise PostgreSQL ile **5432** portunda çalışacaktır.
